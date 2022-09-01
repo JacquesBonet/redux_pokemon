@@ -1,0 +1,16 @@
+# Ignore artifacts:
+.meteor/
+node_modules/
+.vscode/
+.idea/
+.zeplin/
+doc/
+docker/
+kubernetes/
+migration-replicaSet/
+
+
+
+
+# Ignore all HTML files:
+*.html

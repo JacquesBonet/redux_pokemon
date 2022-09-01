@@ -1,0 +1,1 @@
+export { factoryCombineReducers } from './factoryCombineReducers'

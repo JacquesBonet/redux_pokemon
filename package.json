@@ -1,0 +1,54 @@
+{
+  "name": "izberg_exercice",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "18.6.3",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "^18.0.5",
+    "concurrently": "7.3.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1",
+    "wait-on": "6.0.1"
+  },
+  "dependencies": {
+    "@ant-design/icons": "4.7.0",
+    "antd": "4.22.3",
+    "inflection": "1.13.2",
+    "next": "12.2.3",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-infinite-scroll-hook": "4.0.3",
+    "react-redux": "8.0.2",
+    "react-scripts": "5.0.1",
+    "redux": "4.2.0",
+    "wouter": "2.7.5"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test:ut": "react-scripts test --env=jsdom",
+    "test:codegen": "npx playwright codegen http://localhost:3000",
+    "lint": "npx eslint --fix ./src",
+    "prettier": "npx prettier --write .",
+    "dev": "concurrently -k \"BROWSER=none npm start\" \"npm:electron\""
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

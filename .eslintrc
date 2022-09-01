@@ -1,0 +1,18 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    // Use our .prettierrc file as source
+    "no-unused-expressions": "off",
+    "no-throw-literal": "warn",
+    "array-callback-return": "off",
+    "no-use-before-define": "off"
+  }
+}
